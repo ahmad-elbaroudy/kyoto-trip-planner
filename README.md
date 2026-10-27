@@ -14,17 +14,15 @@ npm run build
 
 ## Layout
 
-- `lib/kyoto-data.ts` - stays, experiences and food from the workbook, plus notes about the data.
-- `lib/planner.ts` - parses budget and interests from a message and searches every valid
-  stay / experience / food combination under budget. It skips sold-out experiences and any
-  pair of experiences that clash in time.
-- `components/TripChat.tsx` - the chat UI: suggestion chips, plan cards and a data-notes panel.
+- `lib/mock-response.ts` - one stay, one experience and one food row, typed in from the workbook.
+- `components/TripChat.tsx` - chat page. Sending a message locks the input, shows a thinking
+  animation for 1.5 s, then shows the three mock cards.
 - `app/page.tsx` - renders the chat page.
 
-No API keys are needed. The planner runs in the browser.
+No API keys or backend are needed.
 
 ## Known data issues
 
 - Stay totals in the sheet don't equal nights x price (e.g. S1: 2 x $168 = $336, sheet says $366).
-  The planner uses the sheet totals.
+  The mock shows the sheet total.
 - The pack is dated April 2025 and has no photo URLs (image rights not cleared).
