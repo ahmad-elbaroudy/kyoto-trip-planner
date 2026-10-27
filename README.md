@@ -1,5 +1,9 @@
 # Kyoto Weekend Planner
 
+![Chat with the stay, experience and food cards](docs/thread.png)
+
+![Thinking animation with the input locked](docs/thinking.png)
+
 A Next.js (App Router) + TypeScript + Tailwind CSS chat page that builds a two-night Kyoto plan
 from the prototype content pack (`Kyoto_Weekend_Prototype_Content_Pack.xlsx`).
 
